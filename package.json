@@ -1,16 +1,20 @@
 {
-  "name": "sap.ui.core.tutorial.databinding.01",
+  "name": "sapui5-data-binding",
   "version": "1.0.0",
-  "author": "SAP SE",
-  "description": "Sample: Data Binding - Step 1 - No Data Binding",
+  "description": "Sample project following the SAP UI5 Documentation for practicing data binding strategies.",
+  "main": "index.js",
   "scripts": {
-    "start": "ui5 serve",
-    "build": "ui5 build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@openui5/themelib_sap_fiori_3": "^1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhtasim-Fuad-Showmik/UI5-DataBinding.git"
   },
-  "devDependencies": {
-    "@ui5/cli": "^2.0.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhtasim-Fuad-Showmik/UI5-DataBinding/issues"
+  },
+  "homepage": "https://github.com/Muhtasim-Fuad-Showmik/UI5-DataBinding#readme"
 }

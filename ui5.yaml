@@ -1,8 +1,11 @@
-specVersion: '2.3'
+specVersion: '2.6'
 metadata:
-  name: "sap.ui.core.tutorial.databinding.01"
+  name: sapui5-data-binding
 type: application
-resources:
-  configuration:
-    paths:
-      webapp: .
+framework:
+  name: SAPUI5
+  version: "1.106.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.table
