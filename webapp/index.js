@@ -11,7 +11,13 @@ sap.ui.require([
         var oModel = new JSONModel({
             firstName: "Muhtasim",
             lastName: "Fuad",
-            enabled: true
+            enabled: true,
+            address: {
+                street: "Dietmar-Hopp-Allee 16",
+                city: "Walldorf",
+                zip: "69190",
+                country: "Germany"
+            }
         });
 
         // Assign the model object ot the SAPUI5 Core
