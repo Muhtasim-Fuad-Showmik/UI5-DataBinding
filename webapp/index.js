@@ -41,9 +41,15 @@ sap.ui.require([
         // Assign the model object to the SAPUI5 core using the name "i18n"
         sap.ui.getCore().setModel(oResourceModel, "i18n");
 
-        //Display the XML view called "App"
-        new XMLView({
+        // Display the XML view called "App"
+        var oView = new XMLView({
             viewName: "sap.ui.demo.db.view.App"
-        }).placeAt("content");
+        });
+
+        // Register the view with the message manager
+        sap.ui.getCore().getMessageManager().registerObject(oView, true);
+
+        // Insert the view into the DOM
+        oView.placeAt("content");
 	});
 });
