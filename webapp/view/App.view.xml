@@ -62,7 +62,10 @@
 						type: 'sap.ui.model.type.Currency',
 						formatOptions: { showMeasure: false }
 					}"
-					numberUnit="{/currencyCode}">
+					numberUnit="{/currencyCode}"
+					numberState="{= ${products>UnitPrice} > ${/priceThreshold} ? 'Error' : 'Success' }">
+					<!-- The lesser than sign always means the start of an XML regardless of its context. The ampersand sign also has special meaning in XML. 
+					 Such characters should always be used by their escaped versions (" &lt;" for "<" and " &amp; " for "&") -->
 					<attributes>
 						<ObjectAttribute text="{products>QuantityPerUnit}"/>
 						<ObjectAttribute title="{i18n>stockValue}"
